@@ -2,72 +2,168 @@
 #
 # setup_jd.sh
 # Reads a lines-based config (jd_structure.txt) and creates
-# a multi-level Johnny.Decimal folder structure with
-# specialized template.md for each final folder.
+# a multi-level Johnny.Decimal folder structure with specialized
+# template.md for each final folder, supporting older bash shells
+# that do NOT have 'declare -A' or advanced features.
 
-BASE_DIR=\"Johnny.Decimal\"
-mkdir -p \"$BASE_DIR\"
+# -----------------------------------------------------------
+# 1) Define the BASE DIR (no extra quotes here).
+# -----------------------------------------------------------
+BASE_DIR=Johnny.Decimal
+mkdir -p "$BASE_DIR"
 
-# ------------------------
-# 1. Define Template Types
-# ------------------------
-declare -A TEMPLATES
+# -----------------------------------------------------------
+# 2) get_template() function with simple case statements
+# -----------------------------------------------------------
+get_template() {
+  local type="$1"
+  local item_name="$2"
+  local date_now="$(date +'%Y-%m-%d')"
 
-# 1.1 Generic default template
-TEMPLATES[generic]=\"---\\ntitle: '{{ITEM_NAME}}'\\ncreated: '{{DATE}}'\\ntags: []\\n---\\n\\n# {{ITEM_NAME}}\\n\\n## 🔖 Description\\nDescription of what belongs here.\\n\\n## 🗒️ Notes\\n- \\n\\n## ✅ Actions\\n- [ ] \\n\\n## 🔗 Related Links\\n- [Link](url)\\n\"
+  # We'll store our multi-line output in a variable 'out'
+  # using a heredoc inside case blocks, then echo it.
 
-# 1.2 Inbox
-TEMPLATES[inbox]=\"---\\ntitle: '{{ITEM_NAME}} - Inbox'\\ncreated: '{{DATE}}'\\ntags: [inbox]\\n---\\n\\n# {{ITEM_NAME}} - Inbox\\n\\nUse this folder to hold unsorted items briefly.\\n\\n## 📥 Quick Capture\\n- [ ] Task or note\\n\\n## 🗒️ Next Steps\\n- [ ] Sort these items properly\\n\"
+  case "$type" in
 
-# 1.3 Archive
-TEMPLATES[archive]=\"---\\ntitle: '{{ITEM_NAME}} - Archive'\\ncreated: '{{DATE}}'\\ntags: [archive]\\n---\\n\\n# {{ITEM_NAME}} - Archive\\n\\n## 📦 Purpose\\nLong-term storage.\\n\\n## 🔖 Notes\\n- \\n\"
+    inbox)
+      cat <<EOF
+---
+title: "$item_name - Inbox"
+created: "$date_now"
+tags: [inbox]
+---
 
-# 1.4 Example specialized template (Deal Memos)
-TEMPLATES[deal_memo]=\"---\\ntitle: '{{ITEM_NAME}} - Deal Memo'\\ncreated: '{{DATE}}'\\ntags: [deal_memo]\\n---\\n\\n# Deal Memo: {{ITEM_NAME}}\\n\\n## Investment Thesis\\n- \\n\\n## Risks\\n- \\n\\n## Next Steps\\n- [ ] \\n\\n## Links & References\\n- [Link](url)\\n\"
+# $item_name - Inbox
 
-# ------------------------
-# 2. Read jd_structure.txt
-# ------------------------
-structure_file=\"jd_structure.txt\"
+Use this folder to hold unsorted items briefly.
 
-if [[ ! -f \"$structure_file\" ]]; then
-  echo \"Error: '$structure_file' not found. Please create it and list your system lines.\"
+## 📥 Quick Capture
+- [ ] Task or note
+
+## 🗒️ Next Steps
+- [ ] Sort these items properly
+EOF
+      ;;
+
+    archive)
+      cat <<EOF
+---
+title: "$item_name - Archive"
+created: "$date_now"
+tags: [archive]
+---
+
+# $item_name - Archive
+
+## 📦 Purpose
+Long-term storage.
+
+## 🔖 Notes
+- 
+EOF
+      ;;
+
+    deal_memo)
+      cat <<EOF
+---
+title: "$item_name - Deal Memo"
+created: "$date_now"
+tags: [deal_memo]
+---
+
+# Deal Memo: $item_name
+
+## Investment Thesis
+- 
+
+## Risks
+- 
+
+## Next Steps
+- [ ] 
+
+## Links & References
+- [Link](url)
+EOF
+      ;;
+
+    # Fallback or generic default
+    *)
+      cat <<EOF
+---
+title: "$item_name"
+created: "$date_now"
+tags: []
+---
+
+# $item_name
+
+## 🔖 Description
+A short description of what belongs here.
+
+## 🗒️ Notes
+- 
+
+## ✅ Actions
+- [ ] 
+
+## 🔗 Related Links
+- [Link](url)
+EOF
+      ;;
+  esac
+}
+
+# -----------------------------------------------------------
+# 3) Check for jd_structure.txt
+# -----------------------------------------------------------
+STRUCTURE_FILE=jd_structure.txt
+if [[ ! -f "$STRUCTURE_FILE" ]]; then
+  echo "Error: '$STRUCTURE_FILE' not found. Please create or place it in the same directory."
   exit 1
 fi
 
-echo \"Creating Johnny.Decimal structure in '$BASE_DIR' from '$structure_file'...\"
+echo "Creating Johnny.Decimal structure in '$BASE_DIR' from '$STRUCTURE_FILE'..."
 
-# Each line can have up to 4 fields: Area|Category|Item|TemplateType
+# -----------------------------------------------------------
+# 4) Read each line in jd_structure.txt and create folders
+# -----------------------------------------------------------
+# Format per line:  <Area> | <Category> | <Final Folder> | <TemplateType>
+# e.g.: 10-19 Life Admin|11 🙋 Yo...|11.00 ■ Personal mgmt|generic
+# If <TemplateType> is omitted, we default to 'generic'
+
 while IFS='|' read -r area category final_folder template_type; do
-  # Skip empty or comment lines
-  [[ -z \"$area\" || \"$area\" =~ ^# ]] && continue
+  # Skip empty or comment lines (#)
+  [[ -z "$area" || "$area" =~ ^# ]] && continue
   
-  # If no template_type is provided, default to 'generic'
-  [[ -z \"$template_type\" ]] && template_type=\"generic\"
-  
-  # Build the full path
-  area_path=\"$BASE_DIR/$area\"
-  category_path=\"$area_path/$category\"
-  item_path=\"$category_path/$final_folder\"
-  
-  mkdir -p \"$item_path\"
-  
-  # Grab the template from TEMPLATES map
-  # If not found, fallback to 'generic'
-  template_content=\"${TEMPLATES[$template_type]}\"  
-  if [[ -z \"$template_content\" ]]; then
-    template_content=\"${TEMPLATES[generic]}\"
+  # Default to 'generic' if no template type
+  if [[ -z "$template_type" ]]; then
+    template_type="generic"
   fi
-  
-  # Replace placeholders
-  date_now=\"$(date +'%Y-%m-%d')\"
-  template_content=\"${template_content//'{{DATE}}'/$date_now}\"
-  template_content=\"${template_content//'{{ITEM_NAME}}'/$final_folder}\"
-  
-  # Write to template.md
-  echo -e \"$template_content\" > \"$item_path/template.md\"
-  
-done < \"$structure_file\"
 
-echo \"✅ Done! Explore your '$BASE_DIR' folder for the full structure.\"
+  # Build paths
+  area_path="$BASE_DIR/$area"
+  category_path="$area_path/$category"
+  final_path="$category_path/$final_folder"
 
+  # Create directories
+  mkdir -p "$final_path"
+
+  # Process the final folder name to create a clean filename
+  # 1. First replace & with "and"
+  # 2. Then replace emoji and special characters with spaces
+  # 3. Normalize spaces (no double spaces)
+  # 4. Trim leading/trailing spaces
+  clean_name=$(echo "$final_folder" | sed -E 's/&/ and /g')
+  clean_name=$(echo "$clean_name" | sed -E 's/[^[:alnum:][:space:]\.\_\-]/ /g')
+  clean_name=$(echo "$clean_name" | sed -E 's/[[:space:]]+/ /g' | sed -E 's/^[[:space:]]+//' | sed -E 's/[[:space:]]+$//')
+  
+  # Generate the template content
+  template_content="$(get_template "$template_type" "$final_folder")"
+
+  # Write file named after the final folder inside the final folder
+  echo "$template_content" > "$final_path/$clean_name.md"
+
+done < "$STRUCTURE_FILE"
+
+echo "✅ Done! Explore '$BASE_DIR' for the full multi-level Johnny.Decimal structure."

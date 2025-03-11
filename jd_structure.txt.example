@@ -1,0 +1,109 @@
+# 00-09 Meta System
+00-09 Meta System|00 Index|00.00 Index|generic
+00-09 Meta System|01 Inbox 📥|01.00 Inbox|inbox
+00-09 Meta System|02 Work in Process 🔄|02.00 Work in Process|generic
+00-09 Meta System|03 To-dos & Checklists ✅|03.00 Checklists|generic
+00-09 Meta System|04 Bookmarks & References 🔗|04.00 Bookmarks|generic
+00-09 Meta System|05 Templates 📋|05.00 Template Examples|generic
+00-09 Meta System|09 Archive 📦|09.00 Archive|archive
+
+# 10-19 Personal
+10-19 Personal|10 🖥️ System Management|10.00 ■ System management|generic
+10-19 Personal|10 🖥️ System Management|10.01 Inbox 📥|inbox
+10-19 Personal|10 🖥️ System Management|10.02 System manual 📙|generic
+10-19 Personal|10 🖥️ System Management|10.09 Archive 📦|archive
+
+10-19 Personal|11 🙋 Identity & Documents|11.00 ■ Personal management|generic
+10-19 Personal|11 🙋 Identity & Documents|11.01 Inbox 📥|inbox
+10-19 Personal|11 🙋 Identity & Documents|11.10 ■ Documents 📑|generic
+10-19 Personal|11 🙋 Identity & Documents|11.20 ■ Health & Wellness 🧘|generic
+10-19 Personal|11 🙋 Identity & Documents|11.30 ■ Relationships 👪|generic
+10-19 Personal|11 🙋 Identity & Documents|11.09 Archive 📦|archive
+
+10-19 Personal|12 🏠 Home & Assets|12.00 ■ Home management|generic
+10-19 Personal|12 🏠 Home & Assets|12.01 Inbox 📥|inbox
+10-19 Personal|12 🏠 Home & Assets|12.10 ■ Housing|generic
+10-19 Personal|12 🏠 Home & Assets|12.20 ■ Possessions|generic
+10-19 Personal|12 🏠 Home & Assets|12.09 Archive 📦|archive
+
+10-19 Personal|13 💰 Finance|13.00 ■ Financial management|generic
+10-19 Personal|13 💰 Finance|13.01 Inbox 📥|inbox
+10-19 Personal|13 💰 Finance|13.10 ■ Budgeting|generic
+10-19 Personal|13 💰 Finance|13.20 ■ Investments|generic
+10-19 Personal|13 💰 Finance|13.09 Archive 📦|archive
+
+# 20-29 Professional
+20-29 Professional|20 🖥️ Career System|20.00 ■ System management|generic
+20-29 Professional|20 🖥️ Career System|20.01 Inbox 📥|inbox
+20-29 Professional|20 🖥️ Career System|20.09 Archive 📦|archive
+
+20-29 Professional|21 🏢 Employment|21.00 ■ Job management|generic
+20-29 Professional|21 🏢 Employment|21.10 ■ Current role|generic
+20-29 Professional|21 🏢 Employment|21.20 ■ Career development|generic
+20-29 Professional|21 🏢 Employment|21.30 ■ Job applications|generic
+
+20-29 Professional|22 🎓 Education & Skills|22.00 ■ Learning management|generic
+20-29 Professional|22 🎓 Education & Skills|22.10 ■ Courses|generic
+20-29 Professional|22 🎓 Education & Skills|22.20 ■ Certifications|generic
+20-29 Professional|22 🎓 Education & Skills|22.30 ■ Skills development|generic
+
+20-29 Professional|23 💼 Side Projects|23.00 ■ Projects management|generic
+20-29 Professional|23 💼 Side Projects|23.10 ■ Active projects|generic
+20-29 Professional|23 💼 Side Projects|23.20 ■ Project ideas|generic
+20-29 Professional|23 💼 Side Projects|23.30 ■ Completed projects|generic
+
+# 30-39 Business
+30-39 Business|30 🖥️ Business System|30.00 ■ System management|generic
+30-39 Business|30 🖥️ Business System|30.01 Inbox 📥|inbox
+30-39 Business|30 🖥️ Business System|30.09 Archive 📦|archive
+
+30-39 Business|31 📊 Strategy & Planning|31.00 ■ Strategy management|generic
+30-39 Business|31 📊 Strategy & Planning|31.10 ■ Business plans|generic
+30-39 Business|31 📊 Strategy & Planning|31.20 ■ OKRs & Goals|generic
+30-39 Business|31 📊 Strategy & Planning|31.30 ■ Market research|generic
+
+30-39 Business|32 👥 Team & Operations|32.00 ■ Operations management|generic
+30-39 Business|32 👥 Team & Operations|32.10 ■ Team meetings|generic
+30-39 Business|32 👥 Team & Operations|32.20 ■ Processes|generic
+30-39 Business|32 👥 Team & Operations|32.30 ■ Resources|generic
+
+30-39 Business|33 💸 Finance & Legal|33.00 ■ Finance management|generic
+30-39 Business|33 💸 Finance & Legal|33.10 ■ Accounting|generic
+30-39 Business|33 💸 Finance & Legal|33.20 ■ Legal documents|generic
+30-39 Business|33 💸 Finance & Legal|33.30 ■ Contracts|generic
+
+# 40-49 Projects
+40-49 Projects|40 🖥️ Projects System|40.00 ■ System management|generic
+40-49 Projects|40 🖥️ Projects System|40.01 Inbox 📥|inbox
+40-49 Projects|40 🖥️ Projects System|40.09 Archive 📦|archive
+
+40-49 Projects|41 🚀 Project Alpha|41.00 ■ Project management|generic
+40-49 Projects|41 🚀 Project Alpha|41.10 ■ Planning|generic
+40-49 Projects|41 🚀 Project Alpha|41.20 ■ Execution|generic
+40-49 Projects|41 🚀 Project Alpha|41.30 ■ Review|generic
+
+40-49 Projects|42 🚀 Project Beta|42.00 ■ Project management|generic
+40-49 Projects|42 🚀 Project Beta|42.10 ■ Planning|generic
+40-49 Projects|42 🚀 Project Beta|42.20 ■ Execution|generic
+40-49 Projects|42 🚀 Project Beta|42.30 ■ Review|generic
+
+# 50-59 Knowledge
+50-59 Knowledge|50 🖥️ Knowledge System|50.00 ■ System management|generic
+50-59 Knowledge|50 🖥️ Knowledge System|50.01 Inbox 📥|inbox
+50-59 Knowledge|50 🖥️ Knowledge System|50.09 Archive 📦|archive
+
+50-59 Knowledge|51 📚 Research & Learning|51.00 ■ Research management|generic
+50-59 Knowledge|51 📚 Research & Learning|51.10 ■ Topics of interest|generic
+50-59 Knowledge|51 📚 Research & Learning|51.20 ■ Notes & summaries|generic
+50-59 Knowledge|51 📚 Research & Learning|51.30 ■ Reference materials|generic
+
+50-59 Knowledge|52 💡 Ideas & Creativity|52.00 ■ Ideas management|generic
+50-59 Knowledge|52 💡 Ideas & Creativity|52.10 ■ Brainstorming|generic
+50-59 Knowledge|52 💡 Ideas & Creativity|52.20 ■ Concepts|generic
+50-59 Knowledge|52 💡 Ideas & Creativity|52.30 ■ Inspiration|generic
+
+# 90-99 Archive
+90-99 Archive|90 Archive System|90.00 ■ Archive management|generic
+90-99 Archive|90 Archive System|90.01 Inbox 📥|inbox
+90-99 Archive|91 Archived Items|91.00 ■ General archive|archive
+
