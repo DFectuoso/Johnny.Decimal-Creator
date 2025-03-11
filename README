@@ -1,0 +1,36 @@
+# Johnny.Decimal Folder Setup for Obsidian
+
+This project automates the creation of a comprehensive, multi-level [Johnny.Decimal](https://johnnydecimal.com/) folder structure for use in an Obsidian vault (or any other system). It also provides specialized markdown templates for different categories, ensuring consistent note-taking.
+
+---
+
+## Contents
+
+1. **`setup_jd.sh`**  
+   A bash script that reads a lines-based configuration from `jd_structure.txt` and creates all folders accordingly.  
+   - Each “final folder” gets a `template.md` file based on the template type (e.g., `inbox`, `archive`, `deal_memo`, or `generic`).
+
+2. **`jd_structure.txt`**  
+   A plain-text file listing each subfolder in the Johnny.Decimal structure. Lines are typically in the format:  
+
+- If the optional `TemplateType` is omitted, the script uses a `generic` template.
+
+3. **`README.md`** (this file)  
+Explains what the project is, how to install and run it, and how to customize your Johnny.Decimal configuration.
+
+---
+
+## Usage
+
+1. **Clone or download** this repository.
+2. **Review and edit** `jd_structure.txt` to match your desired Johnny.Decimal system.  
+- Each line corresponds to a final-level folder.  
+- You can assign a template type at the end of the line, e.g. `inbox`, `archive`, `deal_memo`, or `generic`.
+3. **Make the script executable** (on macOS/Linux):
+```bash
+chmod +x setup_jd.sh
+
+./setup_jd.sh
+```
+
+

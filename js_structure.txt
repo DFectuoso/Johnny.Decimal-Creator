@@ -1,0 +1,120 @@
+# 00-09 Index
+00-09 Index|00 Index|00.00 Index|generic
+00-09 Index|01 Inbox 📥|01.00 Inbox|inbox
+00-09 Index|02 Work in Process 🔄|02.00 Work in Process|generic
+00-09 Index|03 To-dos & Checklists ✅|03.00 Checklists|generic
+00-09 Index|04 Bookmarks, Links & URLs 🔗|04.00 Bookmarks|generic
+00-09 Index|05 Templates 📋|05.00 Template Examples|generic
+00-09 Index|09 Archive 📦|09.00 Archive|archive
+
+# 10-19 Life Admin
+10-19 Life Admin|10 🖥️ System Management|10.00 ■ System management|generic
+10-19 Life Admin|10 🖥️ System Management|10.01 Inbox 📥|inbox
+10-19 Life Admin|10 🖥️ System Management|10.02 System manual 📙|generic
+10-19 Life Admin|10 🖥️ System Management|10.09 Archive 📦|archive
+
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.00 ■ Personal system management|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.01 Inbox 📥|inbox
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.09 Archive 📦|archive
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.10 ■ Me and my documents 📑|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.11 Identity and legal documents|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.12 Personal certifications and academic records|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.20 ■ Health & Wellness 🧘|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.21 Health records|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.22 Physical & mental wellness|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.23 Habits, routines, & tracking|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.30 ■ Family & Friends 👨‍👩‍👧‍👦|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.31 Family documents & admin|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.32 Celebrations & events|generic
+10-19 Life Admin|11 🙋 Yo, Monotopa, Friends and Family|11.33 Friends and social circles|generic
+
+10-19 Life Admin|12 🏠 Casas, Cosas y Compras|12.00 ■ Home system management|generic
+10-19 Life Admin|12 🏠 Casas, Cosas y Compras|12.01 Inbox 📥|inbox
+10-19 Life Admin|12 🏠 Casas, Cosas y Compras|12.09 Archive 📦|archive
+# Add more final folders under 12 if needed
+
+10-19 Life Admin|13 📈 Assets & Financial Management|13.00 ■ Financial system management|generic
+10-19 Life Admin|13 📈 Assets & Financial Management|13.01 Inbox 📥|inbox
+10-19 Life Admin|13 📈 Assets & Financial Management|13.09 Archive 📦|archive
+# Expand e.g. 13.10, 13.20, etc., as needed
+
+10-19 Life Admin|14 💻 Digital Tools and Space|14.00 ■ Digital system management|generic
+10-19 Life Admin|14 💻 Digital Tools and Space|14.01 Inbox 📥|inbox
+10-19 Life Admin|14 💻 Digital Tools and Space|14.09 Archive 📦|archive
+
+10-19 Life Admin|15 ✈️ Viajes, Eventos, Entretenimiento|15.00 ■ Travel & events management|generic
+10-19 Life Admin|15 ✈️ Viajes, Eventos, Entretenimiento|15.01 Inbox 📥|inbox
+10-19 Life Admin|15 ✈️ Viajes, Eventos, Entretenimiento|15.09 Archive 📦|archive
+
+10-19 Life Admin|16 📖 Libros, Inspiración, Contenidos y Links|16.00 ■ Content management|generic
+10-19 Life Admin|16 📖 Libros, Inspiración, Contenidos y Links|16.01 Inbox 📥|inbox
+10-19 Life Admin|16 📖 Libros, Inspiración, Contenidos y Links|16.09 Archive 📦|archive
+
+# 20-29 Indie Hacker
+20-29 Indie Hacker|20 🖥️ Indie hacker system|20.00 ■ System management|generic
+20-29 Indie Hacker|20 🖥️ Indie hacker system|20.01 Inbox 📥|inbox
+20-29 Indie Hacker|20 🖥️ Indie hacker system|20.09 Archive 📦|archive
+
+20-29 Indie Hacker|21 Active Projects|21.10 Project planning|generic
+20-29 Indie Hacker|21 Active Projects|21.11 Active code repositories|generic
+# etc.
+
+20-29 Indie Hacker|22 Ideas & Prototypes|22.10 Project ideas|generic
+20-29 Indie Hacker|22 Ideas & Prototypes|22.11 Prototypes & experimentation|generic
+
+# 30-39 500 Global and OGs Leadership
+30-39 500 Global and OGs Leadership|30 🖥️ Leadership system management|30.00 ■ System management|generic
+30-39 500 Global and OGs Leadership|30 🖥️ Leadership system management|30.01 Inbox 📥|inbox
+30-39 500 Global and OGs Leadership|30 🖥️ Leadership system management|30.09 Archive 📦|archive
+
+30-39 500 Global and OGs Leadership|31 Leadership & Strategy|31.10 Leadership meetings & notes|generic
+30-39 500 Global and OGs Leadership|31 Leadership & Strategy|31.11 Strategic planning|generic
+30-39 500 Global and OGs Leadership|31 Leadership & Strategy|31.12 OKRs & tracking|generic
+
+30-39 500 Global and OGs Leadership|32 Productivity & General Admin 📅|32.10 Email & communications|generic
+30-39 500 Global and OGs Leadership|32 Productivity & General Admin 📅|32.11 Calendar management & scheduling|generic
+30-39 500 Global and OGs Leadership|32 Productivity & General Admin 📅|32.12 Task management & workflows|generic
+30-39 500 Global and OGs Leadership|32 Productivity & General Admin 📅|32.13 Time tracking & productivity metrics|generic
+30-39 500 Global and OGs Leadership|32 Productivity & General Admin 📅|32.14 General admin & documentation|generic
+
+30-39 500 Global and OGs Leadership|33 Reporting & Analytics 📊|33.10 Dashboards & KPIs|generic
+30-39 500 Global and OGs Leadership|33 Reporting & Analytics 📊|33.11 Quarterly/Annual reports|generic
+
+# 40-49 Luchadores Funds
+40-49 Luchadores Funds|40 🖥️ Fund Systems & Compliance|40.00 ■ System management|generic
+40-49 Luchadores Funds|40 🖥️ Fund Systems & Compliance|40.01 Inbox 📥|inbox
+40-49 Luchadores Funds|40 🖥️ Fund Systems & Compliance|40.09 Archive 📦|archive
+40-49 Luchadores Funds|40 🖥️ Fund Systems & Compliance|40.10 ■ Compliance and legal|generic
+40-49 Luchadores Funds|40 🖥️ Fund Systems & Compliance|40.20 ■ Templates & resources|generic
+
+# Each Fund
+40-49 Luchadores Funds|41 Luchadores I|41.00 ■ Fund administration|generic
+40-49 Luchadores Funds|41 Luchadores I|41.01 Inbox 📥|inbox
+40-49 Luchadores Funds|41 Luchadores I|41.09 Archive 📦|archive
+40-49 Luchadores Funds|41 Luchadores I|41.10 ■ Deal management|generic
+40-49 Luchadores Funds|41 Luchadores I|41.11 Deal memos|deal_memo
+40-49 Luchadores Funds|41 Luchadores I|41.12 Portfolio companies documentation|generic
+40-49 Luchadores Funds|41 Luchadores I|41.13 Due diligence & research|generic
+40-49 Luchadores Funds|41 Luchadores I|41.20 ■ LP Management|generic
+40-49 Luchadores Funds|41 Luchadores I|41.21 LP communications|generic
+40-49 Luchadores Funds|41 Luchadores I|41.22 Reports & presentations|generic
+40-49 Luchadores Funds|41 Luchadores I|41.30 ■ Team and management|generic
+40-49 Luchadores Funds|41 Luchadores I|41.31 Team meetings & notes|generic
+40-49 Luchadores Funds|41 Luchadores I|41.32 Responsibilities & tasks|generic
+
+# Similarly for 42, 43, 44...
+
+# 60-69 Data & Engineering, IT
+60-69 Data & Engineering, IT|60 🖥️ Technical system management|60.00 ■ System management|generic
+60-69 Data & Engineering, IT|60 🖥️ Technical system management|60.01 Inbox 📥|inbox
+60-69 Data & Engineering, IT|60 🖥️ Technical system management|60.09 Archive 📦|archive
+
+60-69 Data & Engineering, IT|61 Data Infrastructure|61.10 Documentation|generic
+60-69 Data & Engineering, IT|61 Data Infrastructure|61.11 Backups & disaster recovery|generic
+
+60-69 Data & Engineering, IT|62 Engineering & Development|62.10 Code repositories|generic
+60-69 Data & Engineering, IT|62 Engineering & Development|62.11 Project management|generic
+
+# 90-99 Archive
+90-99 Archive|90 Inbox|90.00 ■ Inbox|inbox
+
